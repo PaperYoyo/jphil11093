@@ -6,6 +6,9 @@
             background-color: black;
             height: 200px;
         }
+        nav{
+            color: ivory;
+        }
         footer{
             background-color: black;
             color: ivory;
@@ -15,8 +18,7 @@
             text-align: center;
         }
         h1{
-          font-size: 75px;
-          color: ivory;
+            text-align: center;
         }
         h2{
             text-align: left;
@@ -38,11 +40,21 @@
             font-size: medium;
             text-align: left;
         }
+        ol{
+            text-align: left;
+        }
+        #title{
+            font-size: 75px;
+            color: ivory;
+            line-height: 60px;
+        }
         #guideBar{
             text-align: center;
+            color: ivory;
+            line-height: .5;
         }
         #guideL{
-            color: blue;
+            color: ivory;
             text-align: center;
         }
         .involvedGroup{
@@ -51,41 +63,33 @@
         #pgReason{
             background-color: red;
         }
-        ol{
-            text-align: left;
-        }
     </style>
     <meta charset="UTF-8">
     <title>Jacob</title>
 </head>
-
+<body>
 <!-- I would like to also know how to get the
 header to span the entire top and not just
 a floating box on the background, same with
 footer -->
+
 <header>
 
-    <h1>Jacob Phillips</h1>
+    <h1 id="title">Jacob Phillips</h1>
 
+    <nav>
+        <h4>Guide</h4>
+        <p id="guideBar"> <!-- need a way to center these hyperlinks -->
+            <a id="guideL" href="#g_pgReason">Reason</a><strong>    /    </strong>
+            <a id="guideL" href="#g_involvedGroups">Groups</a><strong>  /  </strong>
+            <a id="guideL" href="#g_List">Plan</a></p>
+    </nav>
+    <!-- I am getting an error for these tags
+    being duplicates even though they are
+    different things they are working with.
+    I have a tag for the links and then I want
+    slashes between them. -->
 </header>
-
-<!-- I am debating weather or not to move
-the guide links to the header, and I found
-both the header and footer tags!! -->
-<body>
-
-<div id="guideBar">
-<h4>Guide</h4>
-<p>
-    <a id="guideL" href="#g_pgReason">Reason</a><strong>/</strong>
-    <a id="guideL" href="#g_involvedGroups">Groups</a><strong>/</strong>
-    <a id="guideL" href="#g_List">Plan</a></p>
-</div>
-<!-- I am getting an error for these tags
-being duplicates even though they are
-different things they are working with.
-I have a tag for the links and then I want
-slashes between them. -->
 
 <p id="g_pgReason"></p>
 <h3 id="pgReason">Reason for this page</h3>
