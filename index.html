@@ -2,33 +2,51 @@
 <html lang="en">
 <head>
     <style>
+        header{
+            background-color: black;
+            height: 200px;
+        }
         footer{
-            background-color: darkred;
+            background-color: black;
+            color: ivory;
         }
         body{
             background-color: ivory;
             text-align: center;
         }
         h1{
-          font-size: 50px;
-        }
-        p{
-            font-family: Arial;
-            font-size: medium;
-            text-align: left;
-        }
-        .involvedGroup{
-            color: blue;
-        }
-        #guideL{
-            color: blue;
-            text-align: center;
+          font-size: 75px;
+          color: ivory;
         }
         h2{
             text-align: left;
         }
         h3{
             text-align: left;
+        }
+        h4{
+
+        }
+        h5{
+
+        }
+        h6{
+
+        }
+        p{
+            font-family: Arial;
+            font-size: medium;
+            text-align: left;
+        }
+        #guideBar{
+            text-align: center;
+        }
+        #guideL{
+            color: blue;
+            text-align: center;
+        }
+        .involvedGroup{
+            color: blue;
         }
         #pgReason{
             background-color: red;
@@ -40,15 +58,34 @@
     <meta charset="UTF-8">
     <title>Jacob</title>
 </head>
+
+<!-- I would like to also know how to get the
+header to span the entire top and not just
+a floating box on the background, same with
+footer -->
+<header>
+
+    <h1>Jacob Phillips</h1>
+
+</header>
+
+<!-- I am debating weather or not to move
+the guide links to the header, and I found
+both the header and footer tags!! -->
 <body>
-<h1>Jacob Phillips</h1>
 
-
+<div id="guideBar">
 <h4>Guide</h4>
-<p id="guideL">
-    <a href="#g_pgReason">Reason</a>/
-    <a href="#g_involvedGroups">Groups</a>/
-    <a href="#g_List">Plan</a></p>
+<p>
+    <a id="guideL" href="#g_pgReason">Reason</a><strong>/</strong>
+    <a id="guideL" href="#g_involvedGroups">Groups</a><strong>/</strong>
+    <a id="guideL" href="#g_List">Plan</a></p>
+</div>
+<!-- I am getting an error for these tags
+being duplicates even though they are
+different things they are working with.
+I have a tag for the links and then I want
+slashes between them. -->
 
 <p id="g_pgReason"></p>
 <h3 id="pgReason">Reason for this page</h3>
@@ -65,6 +102,9 @@
     <p class="involvedGroup">Mercy Hill Church</p>
     <p><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/20604235_1881814565368610_2432966314419762355_n.jpg?_nc_cat=0&oh=c8b4de4b0cf97566a93b6c79117c6d1d&oe=5B96B30E"></p></a>
 
+<!-- the hyper links for the images span
+the entire width of the page, I would like
+it to only be on the image itself. -->
 
 <h3 id="g_List">Things I want to add to this web page</h3>
 <ol>
@@ -84,6 +124,10 @@
 <p>Yeah I want to do alot of things</p>
 
 <h3>Fuck you I am doing Tables</h3>
+<!--need some help with this table
+just with each command that is used
+for each git section, status, push
+and fetch -->
 <table>
     <thead>
     <tr>
@@ -105,5 +149,10 @@
 
 
 </body>
+<footer>
+
+    <p>YOU FOUND ME!</p>
+</footer>
+
 
 </html>
