@@ -2,115 +2,53 @@
 <html lang="en">
 <head>
     <style>
-        header{
-            background-color: black;
-            height: 200px;
-        }
-        nav{
-            color: ivory;
-        }
-        footer{
-            background-color: black;
-            color: ivory;
-        }
-        body{
-            background-color: ivory;
-            text-align: center;
-        }
-        h1{
-            text-align: center;
-        }
-        h2{
-            text-align: left;
-        }
-        h3{
-            text-align: left;
-        }
-        h4{
 
-        }
-        h5{
-
-        }
-        h6{
-
-        }
-        p{
-            font-family: Arial;
-            font-size: medium;
-            text-align: left;
-        }
-        ol{
-            text-align: left;
-        }
-        #title{
-            font-size: 75px;
-            color: ivory;
-            line-height: 60px;
-        }
-        #guideBar{
-            text-align: center;
-            color: ivory;
-            line-height: .5;
-        }
-        .guideL{
-            color: ivory;
-            text-align: center;
-        }
-        .involvedGroup{
-            color: blue;
-        }
-        #pgReason{
-            background-color: firebrick;
-        }
     </style>
     <meta charset="UTF-8">
     <title>Jacob</title>
 </head>
 <body>
-<!-- I would like to also know how to get the
-header to span the entire top and not just
-a floating box on the background, same with
-footer -->
 
-<header>
+<header role="banner">
 
     <h1 id="title">Jacob Phillips</h1>
 
     <nav>
-        <h4>Guide</h4>
-        <p id="guideBar"> <!-- need a way to center these hyperlinks -->
-            <a class="guideL" href="#g_pgReason">Reason</a><strong> / </strong>
-            <a class="guideL" href="#g_involvedGroups">Groups</a><strong> / </strong>
-            <a class="guideL" href="#g_List">Plan</a></p>
+        <h2>Guide</h2>
+        <h3 id="guideBar">
+            <a class="guideLinks" href="#guide_pgReason">Reason</a><strong> / </strong>
+            <a class="guideLinks" href="#guide_involvedGroups">Groups</a><strong> / </strong>
+            <a class="guideLinks" href="#guide_List">Plan</a></h3>
     </nav>
-    <!-- I am getting an error for these tags
-    being duplicates even though they are
-    different things they are working with.
-    I have a tag for the links and then I want
-    slashes between them. -->
+
 </header>
 
-<p id="g_pgReason"></p>
-<h3 id="pgReason">Reason for this page</h3>
-<p>This is my <em>personal</em> website <br>
-    and <strong>coding toy</strong> </p>
+<p id="guide_pgReason"></p>
+<h4 class="pgReason"> Reason for this page</h4>
+<p>This is my <em>personal</em> website and <strong>coding toy</strong> </p>
 
+<h4>Who am I</h4>
+<p>Jacob Phillips</p>
+<p>image coming soon</p>
+<ul>
+    <li>Phone:  </li>
+    <li>Email:  </li>
+    <li>Linked-in:  </li>
+</ul>
 
-<h3 id="g_involvedGroups">Groups I am apart of:</h3>
-<a target="_blank" href="https://kennesawnavs.wordpress.com">
-    <p class="involvedGroup">Kennesaw State Navigators Website</p>
-
+<h4 id="guide_involvedGroups">Groups I am apart of:</h4>
+<p class="involvedGroup">Kennesaw State Navigators</p>
+    <a target="_blank" href="https://kennesawnavs.wordpress.com">
     <p><img src="http://www.georgianavs.com/uploads/2/2/1/6/22160036/navigators-horizontal-color_orig.png" width="300px"></p></a>
-<a target="_blank" href="https://www.facebook.com/mercyhillkennesaw/">
-    <p class="involvedGroup">Mercy Hill Church</p>
-    <p><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/20604235_1881814565368610_2432966314419762355_n.jpg?_nc_cat=0&oh=c8b4de4b0cf97566a93b6c79117c6d1d&oe=5B96B30E"></p></a>
+<p class="involvedGroup">Mercy Hill Church</p>
+    <a target="_blank" href="https://www.facebook.com/mercyhillkennesaw/">
+    <p><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/20604235_1881814565368610_2432966314419762355_n.jpg?_nc_cat=0&oh=c8b4de4b0cf97566a93b6c79117c6d1d&oe=5B96B30E" width="300px"></p></a>
 
 <!-- the hyper links for the images span
 the entire width of the page, I would like
 it to only be on the image itself. -->
 
-<h3 id="g_List">Things I want to add to this web page</h3>
+<h4 id="guide_List">Things I want to add to this web page</h4>
 <ol>
     <li>header bar</li>
     <li>footer bar</li>
@@ -156,13 +94,14 @@ it to only be on the image itself. -->
     </tbody>
 </table>
 
-
-</body>
 <footer>
 
     <p>YOU FOUND ME!</p>
 
 </footer>
+
+</body>
+
 
 
 </html>
