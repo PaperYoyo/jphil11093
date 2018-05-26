@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body{
+            background: lightgreen;
+        }
+        .header{
+            padding: 2em;
+            text-align: center;
+            background: red;
+            color: ivory;
+            line-height: 0;
+        }
+        .nav_bar{
+            overflow: hidden;
+            background: aquamarine;
+            color: ivory;
+            height: 7em;
+        }
+        .nav_bar.a{
+            background: blue;
+            margin: .25em;
+            height: 2.25em;
+            line-height: 0;
+            text-align: left;
+        }
+        .nav_bar.b{
+            overflow: hidden;
+            background: dimgrey;
+            margin: .25em;
+            height: 4em;
+            text-align: left;
+        }
+        .nav_bar.c{
+            float: left;
+            background: grey;
+            text-align: center;
+            padding: .4em .6em;
+        }
+        .nav_bar.c:hover{
+            background: ivory;
+            color: black;
+        }
+
+        .page_body{
+            background: orange;
+            display: table;
+        }
+        .main{
+            background: lightblue;
+            float: left;
+            width: 80%;
+        }
+        .main_card{
+            background: antiquewhite;
+            margin: .5em;
+        }
+
+
+
+
+
+        .sidebar{
+            background: lightcyan;
+            float: left;
+            width: 20%;
+        }
+        .side_card{
+            background: chocolate;
+        }
+
+
+
+
+
+        .footer{
+            background: black;
+            color: ivory;
+        }
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Index 2</title>
+</head>
+<body>
+
+    <div class="header" role="banner">
+
+        <h1 id="title">Jacob Phillips</h1>
+
+        <div class="nav_bar">
+            <div class="nav_bar a">
+                <h2>Guide</h2>
+            </div>
+            <div class="nav_bar b">
+                <h3 id="guideBar">
+                <a class="nav_bar c" href="#guide_pgreason">Reason</a>
+                <a class="nav_bar c" href="#guide_involved_groups">Groups</a>
+                <a class="nav_bar c" href="#future_list">Plan</a>
+                <a class="nav_bar c" href="#git_table">Git Instructions</a>
+                <a class="nav_bar c" href="#" style="float: right"> Link</a>
+            </h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="page_body">
+        <div class="main">
+            <div class="main_card" id="author" role="article">
+                <h1>Who am I?</h1>
+                <p>Jacob Phillips</p>
+                <p><u>image coming soon</u></p>
+                <ul>
+                    <li>Phone:  </li>
+                    <li>Email:  </li>
+                    <li>Linked-in:  </li>
+                </ul>
+            </div>
+            <div class="main_card" id="guide_involved_groups" role="article">
+                <h1>Groups I am apart of:</h1>
+                <p>Kennesaw State Navigators</p>
+                <a target="_blank" href="https://kennesawnavs.wordpress.com">
+                    <p> <img src="http://www.georgianavs.com/uploads/2/2/1/6/22160036/navigators-horizontal-color_orig.png" width="300px"></p></a>
+                <p>Mercy Hill Church</p>
+                <a target="_blank" href="https://www.facebook.com/mercyhillkennesaw/">
+                    <p><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-1/p200x200/20604235_1881814565368610_2432966314419762355_n.jpg?_nc_cat=0&oh=c8b4de4b0cf97566a93b6c79117c6d1d&oe=5B96B30E" width="300px"></p></a>
+            </div>
+            <!-- the hyper links for the images span
+            the entire width of the page, I would like
+            it to only be on the image itself. -->
+            <div class="main_card" id="future_list" role="article">
+                <h1>Things I want to add to this web page</h1>
+                <ol>
+                    <li>header bar</li>
+                    <li>footer bar</li>
+                    <li>side bar</li>
+                    <li>navigation plane</li>
+                    <li>links to other people's pages</li>
+                    <li>other pages</li>
+                    <li>pictures</li>
+                    <li>video clip</li>
+                    <li>other non-html code</li>
+                    <li>comment threads</li>
+                    <li>log in, direct chat</li>
+
+                </ol>
+                <p>Yeah I want to do alot of things</p>
+            </div>
+            <div class="main_card" id="git_table" role="article">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Main commands</th>
+                        <th>Rebasing</th>
+                        <th>Pushing</th>
+                    </tr>
+
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>git clone string_url: clones git repository</td>
+                        <td>git fetch --all: fetches all changes from remote branches</td>
+                        <td>git add . : adds changes to commit</td>
+                    </tr>
+                    <tr>
+                        <td>git status: shows the current changes made to the current branch</td>
+                        <td>git rebase remote_branch(in our case origin/master): applies latest changes from remote branch to current local branch</td>
+                        <td>git commit : commits the current branch's changes</td>
+                    </tr>
+                    <tr>
+                        <td>Hi!!!</td>
+                        <td>Hello World !!!!!</td>
+                        <td>git push origin HEAD: pushes commit to the repository's remote origin's HEAD</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="side_card" id="guide_pgreason" role="article">
+
+                <h1> Reason for this page</h1>
+                <p>This is my <strong>personal</strong> website and <em>coding toy</em></p>
+            </div>
+            <div class="side_card" id="bible verse" role="article">
+                <h1>Psalm 1</h1>
+                <p><sup>1</sup>Blessed is the one who does not walk in step with the wicked or stand in the way that sinners take or sit in the company of mockers,<br>
+                    <sup>2</sup>but whose delight is in the law of the lord, and who meditates on his law day and night. <br>
+                    <sup>3</sup>That person is like a tree planted by streams of water, which yields its fruit in season and whose leaf does not wither whatever they do prospers. <br>
+                    <sup>4</sup>Not so the wicked! They are like chaff that the wind blows away. <br>
+                    <sup>5</sup>Therefore the wicked will not stand in the judgment, nor sinners in the assembly of the righteous. <br>
+                    <sup>6</sup>For the Lord watches over the way of the righteous, but he way of the wicked leads to destruction</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        <p>YOU FOUND ME!</p>
+
+    </div>
+
+
+</body>
+</html>
