@@ -11,6 +11,7 @@
             padding: 2em;
             text-align: center;
             background-image: url('header.jpg');
+            background-position: center;
             background-size: cover;
             color: ivory;
             line-height: 0;
@@ -37,12 +38,20 @@
             text-align: left;
         }
         .nav_bar.c{
+            margin-top: .35em;
+            height: 3em;
+            background: transparent;
+        }
+        .nav_bar.c_child{
+            margin: .25em;
             float: left;
             background: grey;
             text-align: center;
-            padding: .4em .6em;
+            line-height: 1em;
+            padding: .75% 1.75%;
+            height: 1.25em;
         }
-        .nav_bar.c:hover{
+        .nav_bar.c_child:hover{
             background: ivory;
             color: black;
         }
@@ -79,8 +88,20 @@
 
 
         .footer{
+            margin-top: .5em;
+            height: 3em;
             background: black;
             color: ivory;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .footer_card{
+            line-height: 0;
+            margin-top: .25em;
+            height: 2.5em;
+            background: silver;
+            float: left;
+            width: 33%
         }
 
 
@@ -100,12 +121,12 @@
                 <h2>Guide</h2>
             </div>
             <div class="nav_bar b">
-                <h3 id="guideBar">
-                <a class="nav_bar c" href="#guide_pgreason">Reason</a>
-                <a class="nav_bar c" href="#guide_involved_groups">Groups</a>
-                <a class="nav_bar c" href="#future_list">Plan</a>
-                <a class="nav_bar c" href="#git_table">Git Instructions</a>
-                <a class="nav_bar c" href="#" style="float: right"> Link</a>
+                <h3 class="nav_bar c" id="guideBar">
+                <a class="nav_bar c_child" href="#guide_pgreason">Reason</a>
+                <a class="nav_bar c_child" href="#guide_involved_groups">Groups</a>
+                <a class="nav_bar c_child" href="#future_list">Plan</a>
+                <a class="nav_bar c_child" href="#git_table">Git Instructions</a>
+                <a class="nav_bar c_child" href="#" style="float: right"> Link</a>
             </h3>
             </div>
         </div>
@@ -202,9 +223,17 @@
         </div>
     </div>
     <div class="footer">
+        <div class="footer_card">
+            <p>box 1</p>
+        </div>
 
-        <p>YOU FOUND ME!</p>
-
+        <div class="footer_card">
+            <p>box 2</p>
+        </div>
+        
+        <div class="footer_card">
+            <p>box 3</p>
+        </div>
     </div>
 
 
