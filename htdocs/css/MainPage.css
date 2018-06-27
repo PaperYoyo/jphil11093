@@ -1,0 +1,100 @@
+body{
+    background: lightgreen;
+}
+.header{
+    margin: .5em;
+    padding: 2em;
+    text-align: center;
+    background-image: url('../images/header.jpg');
+    background-position: center;
+    background-size: cover;
+    color: ivory;
+    line-height: 0;
+    height: 25em;
+}
+.nav_bar{
+    overflow: hidden;
+    background: aquamarine;
+    color: ivory;
+    height: 7em;
+}
+.nav_bar.a{
+    background: blue;
+    margin: .25em;
+    height: 2.25em;
+    line-height: 0;
+    text-align: left;
+}
+.nav_bar.b{
+    overflow: hidden;
+    background: dimgrey;
+    margin: .25em;
+    height: 4em;
+    text-align: left;
+}
+.nav_bar.c{
+    margin-top: .35em;
+    height: 3em;
+    background: transparent;
+}
+.nav_bar.c_child{
+    margin: .25em;
+    float: left;
+    background: grey;
+    text-align: center;
+    line-height: 1em;
+    padding: .75% 1.75%;
+    height: 1.25em;
+}
+.nav_bar.c_child:hover{
+    background: ivory;
+    color: black;
+}
+
+.page_body{
+    background: orange;
+    display: table;
+}
+.main{
+    background: lightblue;
+    float: left;
+    width: 80%;
+}
+.main_card{
+    background: antiquewhite;
+    margin: .5em;
+}
+
+
+
+
+
+.sidebar{
+    background: lightcyan;
+    float: left;
+    width: 20%;
+}
+.side_card{
+    background: chocolate;
+}
+
+
+
+
+
+.footer{
+    margin-top: .5em;
+    height: 3em;
+    background: black;
+    color: ivory;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_card{
+    line-height: 0;
+    margin-top: .25em;
+    height: 2.5em;
+    background: silver;
+    float: left;
+    width: 33%
+}
