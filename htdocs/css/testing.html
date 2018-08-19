@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testing</title>
+</head>
+<style>
+    body{
+        background: orange;
+    }
+    .banner{
+        height: 20em;
+        background: lightblue;
+    }
+    .name{
+        height: 5em;
+        background:yellow;
+        text-align: center;
+    }
+    .tag{
+        height: 2em;
+        background: blue;
+        text-align: left
+    }
+    .guide{
+        height:3.625em;
+        background:green;
+        margin: .125em;
+    }
+    .guide_button{
+        float: left;
+        margin: .25em .5em;
+        padding: 1em 1em;
+        background: gray;
+        text-decoration: none;
+        color: white;
+    }
+    .guide_button:hover {background: white; color: black;}
+
+    .guide_btn{
+        position: relative;
+        float: right;
+        margin: .25em .5em;
+    }
+    .guide_dropdown{
+        padding: 1em 1em;
+        background: gray;
+        text-decoration: none;
+        color: white;
+    }
+    .guide_dropdown:hover {background: white; color: black;}
+
+    .extra_links{
+        position: absolute;
+        display: none;
+        z-index: 1;
+        background: lightgray;
+    }
+    .extra_links a {
+        color: black;
+        padding: .125em 4em .25em .25em;
+        text-decoration: none;
+        display: block;
+    }
+    .extra_links a:hover {background-color: #f1f1f1}
+
+    .guide_btn:hover .extra_links {
+        display: block;
+    }
+
+</style>
+<body>
+    <div class="banner">
+        <div class="name">
+            <h1 style="margin: 0;"> Jacob Phillips </h1>
+        </div>
+        <div class="tag">
+            <h2 style="margin: 0;"> Guide </h2>
+        </div>
+        <div class="guide">
+            <div><a class="guide_button" href="#">Reason</a></div>
+            <div><a class="guide_button" href="#">Groups</a></div>
+            <div><a class="guide_button" href="#">Plan</a></div>
+            <div><a class="guide_button" href="#">Git Instructions</a></div>
+
+            <div class="guide_btn">
+                <div class="guide_dropdown">Other Websites</div>
+                <div class="extra_links" style="position: absolute;">
+                    <a href="#">link 1</a>
+                    <a href="#">link 2</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>
