@@ -109,20 +109,26 @@ body{
     text-decoration: underline;
 }
 .main_card p{
-    padding-left: .45em;
+    padding: 0 .5em .5em .5em;
+}
+.main_card a{
+    text-decoration: none;
+    color: #f7ce20;
 }
 .main_card_sub{
     background-color: rgb( 255, 255, 255);
-    margin: 1.5em;
+    margin: 3.875%;
     padding: 0;
     display: inline-grid;
     text-align: center;
-    width: 44.5%;
+    width: 42%;
     height: 20em;
 }
 .main_card_sub h2{
     color: #f7ce20;
     text-decoration: underline;
+    margin: 0;
+    background-color: rgba( 11, 60, 93, .60);
 }
 
 
