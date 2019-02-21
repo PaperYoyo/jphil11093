@@ -1,14 +1,13 @@
 body{
-    background-image: url("../images/background.png");
-    background-size: 29.25em;
+    background-image: url("../images/wooden-panels-texture-horizontal.jpg");
     font-family: "Franklin Gothic light";
 }
 .banner{
     margin: .25em;
-    height: 25em;
+    height: 15em;
     border-style: solid;
     border-width: 1em;
-    border-color: #0b3c5d;
+    border-color: black;
     background-image: url('../images/header.jpg');
     background-position: center;
     background-size: cover;
@@ -16,12 +15,11 @@ body{
 }
 .name{
     position: absolute;
-    float: top;
-    top: 2em;
+    top: 1.25em;
     height: 4em;
     width: 100%;
     color: #f7ce20;
-    background-color: rgba(29, 39, 49, .50 );
+    background-color: rgba(0, 0, 0, .50 );
     line-height: 4em;
     text-align: center;
 }
@@ -87,25 +85,32 @@ body{
 
 
 .page_body{
-    margin: .25em;
-    margin-top: 2em;
-    background: #0b3c5d;
-    display: table;
+    margin:3em 3em 2em;
+    background: black;
 }
 .main{
-    background: #0b3c5d;
-    float: left;
-    width: 75%;
+    padding: .5em .5em .125em;
+    background: black;
+
+
 }
 .main_card{
-    background: #4ab9f9;
-    margin: .5em;
+    background: whitesmoke;
+
 }
 .main_card h1{
     margin-top: 0;
+    margin-bottom: 0;
     padding-left: .25em;
-    background: rgba(11, 60, 93, .40);
+    background: rgba(0, 0, 0, .40);
     color: #f7ce20;
+    font-style: italic;
+    text-decoration: underline;
+}
+.main_card h5{
+    margin: 0;
+    background: rgba(0, 0, 0, .15);
+    color: mediumpurple;
     font-style: italic;
     text-decoration: underline;
 }
@@ -114,59 +119,15 @@ body{
 }
 .main_card a{
     text-decoration: none;
-    color: #f7ce20;
+    color: mediumpurple;
 }
-.main_card_sub{
-    background-color: rgb( 255, 255, 255);
-    margin: 3.875%;
-    padding: 0;
-    display: inline-grid;
-    text-align: center;
-    width: 42%;
-    height: 20em;
-}
-.main_card_sub h2{
-    color: #f7ce20;
-    text-decoration: underline;
-    margin: 0;
-    background-color: rgba( 11, 60, 93, .60);
-}
-
-
-
-
-.sidebar{
-    background: lightcyan;
-    float: left;
-    width: 25%;
-}
-.side_card{
-    border-color: #0b3c5d;
-    border-style: solid;
-    border-width: .25em;
-    background: #4ab9f9;
-}
-.side_card h1{
-    margin-top: 0;
-    padding-left: .25em;
-    background: rgba(11, 60, 93, .40);
-    color: #f7ce20;
-    font-style: italic;
-    text-decoration: underline;
-}
-.side_card p{
-    padding-left: .45em;
-    padding-right: .45em;
-}
-
-
 
 
 
 .footer{
     margin-top: .5em;
     height: 3em;
-    background: #1d2731;
+    background: pink;
     color: black;
     display: flex;
     justify-content: space-evenly;
@@ -177,8 +138,8 @@ body{
     height: 2.5em;
     border-style: solid;
     border-width: .5em;
-    border-color: #0b3c5d;
-    background: #4ab9f9;
+    border-color: black;
+    background: whitesmoke;
     float: left;
     width: 33%
 }
