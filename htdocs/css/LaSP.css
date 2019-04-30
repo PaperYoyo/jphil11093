@@ -1,0 +1,148 @@
+body{
+    background-image: url("../images/wooden-panels-texture-horizontal.jpg");
+    font-family: "Franklin Gothic light";
+}
+.banner{
+    margin: .25em;
+    height: 22em;
+    border-style: solid;
+    border-width: 1em;
+    border-color: black;
+    background-image:url('../images/Cupid_and_Pysche.jpg');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.name{
+    position: absolute;
+    top: 3em;
+    height: 4em;
+    width: 100%;
+    color: #f7ce20;
+    background-color: rgba(0, 0, 0, .50 );
+    line-height: 4em;
+    text-align: center;
+}
+.tag{
+    position: absolute;
+    top: 5em;
+    margin: .25em;
+    height: 2.25em;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.guide{
+    position: absolute;
+    bottom: 0;
+    height:3.625em;
+    width: 100%;
+    margin: .25em;
+}
+.guide_button{
+    float: left;
+    margin: .25em .5em;
+    padding: .5em 1em;
+    background: #f7ce20;
+    text-decoration: none;
+    color: black;
+}
+.guide_button:hover {background: white; color: black;}
+
+.guide_btn{
+    position: relative;
+    float: right;
+    margin: .25em .5em;
+}
+.guide_dropdown{
+    padding: .5em 1em;
+    background: #f7ce20;
+    text-decoration: none;
+    color: black;
+}
+
+.guide_dropdown:hover {background: white; color: black;}
+
+
+.extra_links{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background: #f7ce20;
+}
+.extra_links a {
+    color: black;
+    padding: .25em 1.65em .25em .125em;
+    text-decoration: none;
+    display: block;
+}
+.extra_links a:hover {background-color: white;}
+
+.guide_btn:hover .extra_links {
+    display: block;
+}
+
+
+
+.page_body{
+    margin:3em 3em 2em;
+    background: black;
+}
+.main{
+    padding: .5em .5em .125em;
+    background: black;
+
+
+}
+.main_card{
+    background: whitesmoke;
+
+}
+.main_card h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: .25em;
+    background: rgba(0, 0, 0, .40);
+    color: #f7ce20;
+    font-style: italic;
+    text-decoration: underline;
+}
+.main_card h5{
+    margin: 0;
+    background: rgba(0, 0, 0, .15);
+    color: mediumpurple;
+    font-style: italic;
+    text-decoration: underline;
+}
+.main_card p{
+    padding: 0 .5em .5em .5em;
+}
+.main_card a{
+    text-decoration: none;
+    color: mediumpurple;
+}
+
+
+
+.footer{
+    margin-top: .5em;
+    height: 3em;
+    background: pink;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_card{
+    line-height: 0;
+    margin-top: .25em;
+    height: 2.5em;
+    border-style: solid;
+    border-width: .5em;
+    border-color: black;
+    background: whitesmoke;
+    float: left;
+    width: 33%
+}
+.footer p{
+    padding-left: .45em;
+}
