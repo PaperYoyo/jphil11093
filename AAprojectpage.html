@@ -52,7 +52,7 @@
         //cutting the time out of save id
         window.time_id = save_id.slice(0, save_length);
         //cutting coin id out of save id
-        window.coin_id = save_id.slice(save_length);
+        window.coin_id = save_id.slice(save_length+1);
         //displaying load time
         document.getElementById("load_time").innerHTML = 'The load time is ' + load_time;
         //displaying save id for testing
@@ -73,7 +73,7 @@
         minelapsed= Math.trunc (elapsed / 60000);
         elapsed%=60000;
         secelapsed=Math.trunc (elapsed /1000);
-        elapsed=" Days:" + dayelapsed + " Hours: " + hourelapsed + " Minutes: " + minelapsed +
+        elapsed=" Days: " + dayelapsed + " Hours: " + hourelapsed + " Minutes: " + minelapsed +
             " Seconds: " + secelapsed;
         //displays time elapsed time
         document.getElementById("time_display").innerHTML = elapsed;
@@ -99,12 +99,12 @@
 
                 // places identifiers on the cells
                 // if true the cell will display the image related to the number of the cell
-                if (coin_id[l+1] == 1) {
+                if (coin_id[l] == 1) {
                     cell.innerHTML = "<img src='htdocs/AAproject Assets/Images/true" + l + ".png'>";
                     cell.id = "coin" + l;
                     cell.className = "true";
                 // if false then a false image will be displayed
-                } else if (coin_id[l+1] == 0) {
+                } else if (coin_id[l] == 0) {
                     cell.innerHTML = "<img src='htdocs/AAproject Assets/Images/false.png'>";
                     cell.id = "coin" + l;
                     cell.className = "false";
