@@ -5,11 +5,8 @@ body{
 .banner{
     margin: .25em;
     height: 25em;
-    border-style: solid;
-    border-width: 1em;
-    border-color: Black;
-    background-image: url('../images/header.jpg');
-    background-position: center;
+    border: 1em solid Black;
+    background: url('../images/header.jpg') center;
     background-size: cover;
     position: relative;
 }

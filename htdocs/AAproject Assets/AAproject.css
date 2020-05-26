@@ -1,0 +1,74 @@
+body{
+    background: sandybrown;
+    font-family: "Franklin Gothic light";
+}
+.button {
+    color: white;
+    float: left;
+    margin: .25em .5em;
+    padding: .5em 1em;
+    background: darkslategrey;
+    text-decoration: none;
+}
+.top_cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.display_card{
+    display: flex;
+    padding: .5em;
+    color: white;
+    font-size: 1.5em;
+    border: .5em solid saddlebrown;
+    height: 10em;
+    width: 95%;
+    background: green;
+    float: left;
+}
+.bottom_cards{
+    padding: 1em;
+    border: .5em solid saddlebrown;
+    background: green;
+    color: white;
+}
+.time_card{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    padding: .5em;
+    width: 95%;
+}
+.save_card{
+    border: .5em solid saddlebrown;
+    background: darkgrey;
+    color: black;
+    font-size: 1.5em;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 95%;
+}
+.chip_table{
+    width: 100%;
+    background: darkgrey;
+}
+.chip_table thead tr th {
+    width: 30%;
+    justify-content: center;
+    border: .1em solid black;
+}
+.chip_table tbody tr td {
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    border: .1em solid red;
+}
+.true img{
+    width: 100%;
+}
+.false img{
+    width: 100%;
+}
+.unknown img{
+    display: none;
+}

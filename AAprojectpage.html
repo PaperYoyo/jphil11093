@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AA Project</title>
+    <link rel="stylesheet" href="htdocs/css/MainPage.css">
+    <link rel="icon" href="htdocs/AAproject Assets/Images/light_beer.ico">
+    <link rel="stylesheet" href="htdocs/AAproject Assets/AAproject.css">
+</head>
+<style>
+
+</style>
+
+<body onload = "pagesetup()">
+<div class="top_cards">
+    <div class="display_card" >
+        <p id="load_time"></p>
+    </div>
+    <div class="display_card" >
+        <p id="button_time">Press button to see button time </p>
+    </div>
+</div>
+<div class="bottom_cards">
+    <div class="time_card">
+        <button class="button" type="button" onclick="buttontimeset()">Display Time and Date</button>
+    </div>
+    <div class="time_card">
+        <button class="button" type="button" onclick="coinbutton()">Show Coins</button>
+    </div>
+    <div class="time_card">
+        <p id="time_display"> Click the button to see the difference in time.</p>
+    </div>
+    <div class="save_card">
+        <p id="save_id"></p>
+    </div>
+</div>
+<div class="chip_card">
+    <table class="chip_table" id="coin_table"></table>
+</div>
+
+<script>
+    //set up the page with proper variables and date information
+    function pagesetup() {
+        //grabs load time
+        window.load_time = [Date(), Date.now()];
+        //creates save id for testing
+        window.save_id = String(load_time[1]);
+        window.coin_id = 63;
+        window.save_length = save_id.length;
+        //adding coin id to save id
+        window.save_id = save_id + coin_id.toString(2);
+        //cutting the time out of save id
+        window.time_id = save_id.slice(0, save_length);
+        //cutting coin id out of save id
+        window.coin_id = save_id.slice(save_length);
+        //displaying load time
+        document.getElementById("load_time").innerHTML = 'The load time is ' + load_time;
+        //displaying save id for testing
+        document.getElementById("save_id").innerHTML = save_id + "<br>" + time_id + "<br>" + coin_id;
+    }
+
+    //calculates the time between load and button press
+    function buttontimeset() {
+        //grabs button time and calculates button time and load time difference
+        let button_time = [Date(), Date.now()];
+        let elapsed = button_time[1] - load_time[1];
+        let dayelapsed, hourelapsed, minelapsed, secelapsed;
+        //changes elapsed to days, hours, min, sec
+        dayelapsed= Math.trunc (elapsed / 8.64e7);
+        elapsed%=8.64e7;
+        hourelapsed= Math.trunc (elapsed / 3600000);
+        elapsed%=3600000;
+        minelapsed= Math.trunc (elapsed / 60000);
+        elapsed%=60000;
+        secelapsed=Math.trunc (elapsed /1000);
+        elapsed=" Days:" + dayelapsed + " Hours: " + hourelapsed + " Minutes: " + minelapsed +
+            " Seconds: " + secelapsed;
+        //displays time elapsed time
+        document.getElementById("time_display").innerHTML = elapsed;
+
+        document.getElementById("button_time").innerHTML = 'The button time is ' + button_time;
+
+    }
+
+    //reads coin_id and creates a table to display it
+    function coinbutton() {
+
+        //table creation based on coins array length and values of the boolean
+        //l is the cell number, i&j are loop counters
+        //table, row, and cell are used to create the table
+        let table = document.getElementById("coin_table");
+        //creating one row per 3 booleans
+        for (let i =0, l=0; i < coin_id.length / 3; i++) {
+            let row = table.insertRow(i);
+
+            //creating three cells in the row
+            for (let j = 0; j < 3; j++) {
+                let cell = row.insertCell(j);
+
+                // places identifiers on the cells
+                // if true the cell will display the image related to the number of the cell
+                if (coin_id[l+1] == 1) {
+                    cell.innerHTML = "<img src='htdocs/AAproject Assets/Images/true" + l + ".png'>";
+                    cell.id = "coin" + l;
+                    cell.className = "true";
+                // if false then a false image will be displayed
+                } else if (coin_id[l+1] == 0) {
+                    cell.innerHTML = "<img src='htdocs/AAproject Assets/Images/false.png'>";
+                    cell.id = "coin" + l;
+                    cell.className = "false";
+                // if else/undefined then the cell will be blank because there is no item for that cell
+                } else {
+                    cell.innerHTML = "<img src='htdocs/AAproject Assets/Images/unknown.png'>";
+                    cell.id = "coin" + l;
+                    cell.className = "unknown";
+                }
+                console.log(coin_id[l+1])
+                l++
+
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>
