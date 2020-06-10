@@ -11,7 +11,7 @@
 
 </style>
 
-<body onload = "pagesetup()">
+<body>
 <div class="top_cards">
     <div class="display_card" >
         <p id="load_time"></p>
@@ -39,25 +39,24 @@
 </div>
 
 <script>
-    //set up the page with proper variables and date information
-    function pagesetup() {
-        //grabs load time
-        window.load_time = [Date(), Date.now()];
-        //creates save id for testing
-        window.save_id = String(load_time[1]);
-        window.coin_id = 63;
-        window.save_length = save_id.length;
-        //adding coin id to save id
-        window.save_id = save_id + coin_id.toString(2);
-        //cutting the time out of save id
-        window.time_id = save_id.slice(0, save_length);
-        //cutting coin id out of save id
-        window.coin_id = save_id.slice(save_length+1);
-        //displaying load time
-        document.getElementById("load_time").innerHTML = 'The load time is ' + load_time;
-        //displaying save id for testing
-        document.getElementById("save_id").innerHTML = save_id + "<br>" + time_id + "<br>" + coin_id;
-    }
+
+    //grabs load time
+    var load_time = [Date(), Date.now()];
+    //creates save id for testing
+    var save_id = String(load_time[1]);
+    var coin_id = 63;
+    var save_length = save_id.length;
+    //adding coin id to save id
+    save_id = save_id + coin_id.toString(2);
+    //cutting the time out of save id
+    var time_id = save_id.slice(0, save_length);
+    //cutting coin id out of save id
+    coin_id = save_id.slice(save_length+1);
+    //displaying load time
+    document.getElementById("load_time").innerHTML = 'The load time is ' + load_time;
+    //displaying save id for testing
+    document.getElementById("save_id").innerHTML = save_id + "<br>" + time_id + "<br>" + coin_id;
+
 
     //calculates the time between load and button press
     function buttontimeset() {
